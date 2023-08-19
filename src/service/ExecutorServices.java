@@ -1,3 +1,7 @@
+package service;
+
+import model.Reminder;
+
 //todo - Create a program that simulates a simple reminder application.
 // The program should allow users to schedule reminders for specific tasks
 // at designated times
@@ -8,10 +12,14 @@
 //        scheduleReminder(Reminder reminder): Schedules a reminder for execution at the specified time.
 //        cancelReminder(Reminder reminder): Cancels a scheduled reminder.
 //        markReminderAsCompleted(Reminder reminder): Marks a reminder as completed.
-//    The program should provide a simple command-line interface (CLI) for users to interact with the ReminderScheduler. Users should be able to:
 //        Schedule a new reminder by providing the task description and the time (in the format "yyyy-MM-dd HH:mm:ss").
 //        Cancel a scheduled reminder by specifying the task description.
 //        Mark a reminder as completed by specifying the task description.
-public class ExecutorServices {
+public interface ExecutorServices {
+
+    void scheduleReminder(Reminder reminder);
+    void  cancelReminder(Reminder reminder);
+    void markReminderAsCompleted(Reminder reminder);
+
 
 }

@@ -1,6 +1,6 @@
 1.
-    - Thread nima?
-    - Daemon thread nima?
+    - Thread nima? cpu yaratilib programma ishlatadi
+    - Daemon thread nima? boshqa threadlaga bog'liq xolda ishlaydi thread qolmasa uchadi
     - Thread Executors turlarini yozing.
     - Serialization bilan Deserializationning nima ?
     - Log levellarni yozing.
