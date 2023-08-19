@@ -2,16 +2,15 @@ package model;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.UUID;
 
 public class Reminder {
     UUID uuid ;
     private String task;
-    private Date date;
+    private LocalDateTime date;
     private boolean completed;
 
-    public Reminder(UUID uuid,String task, Date date, boolean completed) {
+    public Reminder(UUID uuid,String task, LocalDateTime date, boolean completed) {
         this.uuid = UUID.randomUUID();
         this.task = task;
         this.date = date;
@@ -34,11 +33,11 @@ public class Reminder {
         this.task = task;
     }
 
-    public Date getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 

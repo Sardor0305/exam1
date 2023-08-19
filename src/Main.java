@@ -2,6 +2,7 @@ import model.Reminder;
 import service.ExcutorServiceImpl;
 import service.ExecutorServices;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.UUID;
 
@@ -38,9 +39,11 @@ public class Main {
         thread2.start();
 
         //solution;
-//        UUID uuid = UUID.randomUUID();
-//        Reminder reminder = new Reminder(uuid,"hi", Date.parse(",true);
-//        ExecutorServices executorServices = new ExcutorServiceImpl();
+        UUID uuid = UUID.randomUUID();
+        Reminder reminder = new Reminder(uuid,"hi", LocalDateTime.parse("2023-08-19 13:31:12"),false);
+
+        ExecutorServices executorServices = new ExcutorServiceImpl();
+        executorServices.scheduleReminder(reminder);
 
 
 

@@ -1,6 +1,18 @@
 1.
     - Thread nima? cpu yaratilib programma ishlatadi
     - Daemon thread nima? boshqa threadlaga bog'liq xolda ishlaydi thread qolmasa uchadi
-    - Thread Executors turlarini yozing.
-    - Serialization bilan Deserializationning nima ?
-    - Log levellarni yozing.
+    - Thread Executors turlarini yozing.    SingleThreadExecutor()
+                                             CachedThreadPool()
+                                             ScheduledThreadPool()
+                                             FixedThreadPool()
+    - Serialization bilan Deserializationning nima ?  Serialization va deserialization bu obyektlarni byte streamga o'tkazish
+                                                       va qayta obyektga o'tkazish uchun qo'llanadigan mexanizmlardir. Ular turli maqsadlar uchun foydali,
+                                                       masalan, fayllarni obyekt datalarini faylda saqlash, obyektlarni networklarda o'tkazish yoki obyekt holatini turli
+                                                       platformalar orasida saqlab turish uchun.
+     - Log levellarni yozing.     Level.INFO
+                                Level.CONFIG
+                                 Level.SEVERE
+                                 Level.WARNING
+                                 Level.FINE
+                                 Level.FINER
+                                 Level.FINEST
