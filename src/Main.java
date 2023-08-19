@@ -2,4 +2,7 @@
 //  for this exam and make it public, and also share the link
 //  of the project in the group.
 public class Main {
+    public static void main(String[] args) {
+
+    }
 }
